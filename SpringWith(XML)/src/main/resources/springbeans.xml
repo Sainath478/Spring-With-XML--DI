@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="stu" class="com.demo.Student">
+		<constructor-arg index="0" value="007"></constructor-arg>
+		<constructor-arg index="1" value="mangesh"></constructor-arg>
+		<constructor-arg index="2" value="23"></constructor-arg>
+		<constructor-arg index="3" value="pune"></constructor-arg>
+		<constructor-arg index="4" ref="c"></constructor-arg>
+
+
+
+	</bean>
+
+	<bean id="c" class="com.demo.Country">
+		<constructor-arg index="0" value="91"></constructor-arg>
+		<constructor-arg index="1" value="India"></constructor-arg>
+
+	</bean>
+
+
+
+</beans>

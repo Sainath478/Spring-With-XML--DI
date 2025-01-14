@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="emp" class="com.demo.Employee">
+		<constructor-arg index="0" value="007"></constructor-arg>
+		<constructor-arg index="1" value="mangesh"></constructor-arg>
+		<constructor-arg index="2" value="35000"></constructor-arg>
+		<constructor-arg index="3" value="devloper"></constructor-arg>
+		<constructor-arg index="4" value="pune"></constructor-arg>
+		<constructor-arg index="5" ref="project"></constructor-arg>
+
+
+
+
+	</bean>
+
+	<bean id="project" class="com.demo.Project">
+		<constructor-arg index="0" value="10023"></constructor-arg>
+		<constructor-arg index="1" value="Student_Present_Management"></constructor-arg>
+		<constructor-arg index="2" value="10-12-2027"></constructor-arg>
+		<constructor-arg index="3" value="22"></constructor-arg>
+
+
+	</bean>
+
+
+
+</beans>
